@@ -1,6 +1,6 @@
-<?php require 'inc/header.php'; ?>
-
-<h2>Välkommen!</h2>
-<p>Här kommer gästboken snart.</p>
-
-<?php require 'inc/footer.php'; ?>
+<?php
+    require 'inc/dbsetting.php';
+    require 'inc/header.php';
+    require 'inc/main.php';
+    require 'inc/footer.php'; 
+?>
