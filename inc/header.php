@@ -8,7 +8,7 @@
   <title>Gästbok</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL ?>css/style.css">
 </head>
 
 <body>
