@@ -17,7 +17,7 @@
     ORDER BY messages.created_at DESC";
     $messages = $con->query($sql)->fetchALL();
 
-    require 'inc/header.php'
-    require 'inc/main.php'
-    require 'inc/footer.php'
+    require 'inc/header.php';
+    require 'inc/main.php';
+    require 'inc/footer.php';
 ?>
