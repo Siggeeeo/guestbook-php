@@ -16,8 +16,13 @@
     <div class="w3-bar w3-black w3-large">
     <a href="<?php echo BASE_URL ?>index.php" class="w3-bar-item w3-button">Gästbok</a>
     <a href="<?php echo PAGES_URL ?>about.php" class="w3-bar-item w3-button">Om</a>
-    <a href="<?php echo PAGES_URL ?>login.php" class="w3-bar-item w3-button w3-right">Logga in</a>
-    <a href="<?php echo PAGES_URL ?>register.php" class="w3-bar-item w3-button w3-right">Registrera</a>
+   <?php if (isset($_SESSION['username'])): ?>
+    <a href="<?php echo PAGES_URL ?>logout.php" class="w3-bar-item w3-button w3-right">Logga ut</a>
+     <span class="w3-bar-item w3-right">Inloggad som <?php echo $_SESSION['username']; ?></span>
+    <?php else: ?>
+      <a href="<?php echo PAGES_URL ?>login.php" class="w3-bar-item w3-button w3-right">Logga in</a>
+      <a href="<?php echo PAGES_URL ?>register.php" class="w3-bar-item w3-button w3-right">Registrera</a>
+    <?php endif; ?>
     </div>
 </nav>
 <header class="bgimg w3-display-container w3-text-white">  <div class="w3-display-middle w3-center">
